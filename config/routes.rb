@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'landing/index'
+
+  get 'landing/about'
+
+  get 'landing/contact'
+
   namespace :admin do
     resources :users
 resources :articles
