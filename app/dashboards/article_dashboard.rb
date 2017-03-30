@@ -14,7 +14,7 @@ class ArticleDashboard < Administrate::BaseDashboard
     date: Field::DateTime,
     author: Field::String,
     content: Field::Text,
-    image: Field::String,
+    image: Field::String, #File
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
