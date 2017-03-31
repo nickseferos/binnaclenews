@@ -7,4 +7,5 @@ class LandingController < ApplicationController
 
   def contact
   end
+
 end

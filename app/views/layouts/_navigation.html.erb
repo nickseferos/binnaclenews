@@ -1,0 +1,27 @@
+<div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <h4><li class="menu-text">Binnacle News</li></h4>
+      <li>
+        
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+<!--       <li><input type="search" placeholder="Search"></li>   
+      <li><button type="button" class="hollow button">Search</button></li> -->
+
+
+
+      <%= form_tag(root_path, method: "get", id: "search-form") do %>
+        <li><%= text_field_tag :search, params[:search], placeholder: "Search" %></li>
+        <li><%= submit_tag "Search", name: nil, class: "hollow button" %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

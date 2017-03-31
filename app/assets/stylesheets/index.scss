@@ -1,0 +1,29 @@
+#overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #02baf2;
+   opacity: 0.6;
+   z-index: -1;
+}
+.img-full-top {
+	height: 70vh;
+	width: 100vw;
+	object-fit: cover;
+	object-position: center center;
+	z-index: -100;
+}
+
+.img-full-bottom {
+	height: 100vh;
+	width: auto;
+	object-fit: cover;
+	object-position: bottom center;
+}
+.half-height{
+	position: realitive;
+	top: 50%;
+	transform: translateY(-50%);
+}
